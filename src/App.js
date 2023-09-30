@@ -24,12 +24,12 @@ export default function App() {
     const contractAddress = "0x24A550c6c90BD9776002Cb384af5fF06be459EAF";
 
     let provider;
-    let signer = null;
+   // let signer = null;
     if (window.ethereum == null) {
-     provider = ethers.getDefaultProvider()
+     //provider = ethers.getDefaultProvider()
     } else {
-       provider = new ethers.JsonRpcProvider(rpc);
-       signer = provider.getSigner();
+       //provider = new ethers.JsonRpcProvider(rpc);
+      // signer = provider.getSigner();
    }
    const wallet = new ethers.Wallet(PRIVATE_KEY, provider);
 
